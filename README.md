@@ -23,7 +23,7 @@ Mini Project นี้เป็นการนำเสนอ Microcontroller �
  
 <center><table>
  <tr>
-  <th><img src="src/ong.jpg" height="150" width="130"></th>
+  <th><img src="src/ong.jpg" height="150" width="150"></th>
   <th><img src="src/yew.jpg" height="150" width="150"></th>
   <th><img src="src/man.jpg" height="150" width="150"></th>
   <th><img src="src/kit.jpg" height="150" width="150"></th>
