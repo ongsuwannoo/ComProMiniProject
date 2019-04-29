@@ -48,10 +48,8 @@ Mini Project นี้เป็นการนำเสนอ Microcontroller �
 <a href=https://www.esportsearnings.com/>e-Sports Earnings</a>
 <br />
 <br />
-
-
-<a href=https://forthebadge.com/><img src="images/made-with-python.svg"></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href=https://forthebadge.com/><img src="images/uses-html.svg"></a>
 [![forthebadge](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-c.svg)](https://forthebadge.com)
 
 
 
