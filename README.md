@@ -1,10 +1,11 @@
-
+<p align="center"> 
 # SONA ล่า A
+</p>
 ![](images/esports.gif)
 
 # Description 
-Project นี้เป็นการนำเสนอ Microcontroller <br>
-<b>1.วิเคราะห์รายได้จากวงการ eSports ว่ามีแนวทางการเติบโตและส่งผลต่อธุรกิจอย่างไร</b><br>
+Mini Project นี้เป็นการนำเสนอ Microcontroller <br>
+<b> </b><br>
 <b>2.วิเคราะห์แนวเกมที่เป็นที่นิยมในวงการ eSports และสาเหตุที่เป็นที่นิยม</b>
 
 # Status
