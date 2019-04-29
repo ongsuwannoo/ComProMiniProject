@@ -1,7 +1,6 @@
 <h1 align="center"> 
 SONA ล่า A
 </h1>
-![](images/esports.gif)
 
 # Description 
 Mini Project นี้เป็นการนำเสนอ Microcontroller <br>
