@@ -4,12 +4,12 @@ SONA ล่า A
 
 # Description 
 Mini Project นี้เป็นการนำเสนอ Microcontroller <br>
-<b> </b><br>
-<b>2.วิเคราะห์แนวเกมที่เป็นที่นิยมในวงการ eSports และสาเหตุที่เป็นที่นิยม</b>
+<b>2 </b><br>
+<b>1 </b>
 
 # Status
 <b>Borad Microcontroller&nbsp;: Uncompleted</b><br>
-<b>Poster&nbsp;&nbsp;&nbsp;: Uncompleted</b><br>
+<b>Poster&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Uncompleted</b><br>
 <b>Presentation Video &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Uncompleted</b><br>
 <b>Lastest Update : 30 April 2019 00:47 AM</b><br>
 &nbsp;&nbsp;
