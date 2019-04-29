@@ -23,10 +23,10 @@ Mini Project นี้เป็นการนำเสนอ Microcontroller �
  
 <center><table>
  <tr>
-  <th><img src="images/great.jpg" height="150" width="130"></th>
-  <th><img src="images/tank.jpg" height="150" width="150"></th>
-  <th><img src="images/ong.jpg" height="150" width="150"></th>
-  <th><img src="images/tun.jpg" height="150" width="150"></th>
+  <th><img src="images/ong.jpg" height="150" width="130"></th>
+  <th><img src="images/yew.jpg" height="150" width="150"></th>
+  <th><img src="images/man.jpg" height="150" width="150"></th>
+  <th><img src="images/kit.jpg" height="150" width="150"></th>
  </tr>
  <tr>
   <th><p align="center">Kesaranee Trisawatwong</p></th> 
