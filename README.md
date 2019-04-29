@@ -8,13 +8,12 @@ Mini Project นี้เป็นการนำเสนอ Microcontroller <b
 <b>2.วิเคราะห์แนวเกมที่เป็นที่นิยมในวงการ eSports และสาเหตุที่เป็นที่นิยม</b>
 
 # Status
-<b>Economic&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;: Completed</b><br>
-<b>Game Trends&nbsp;&nbsp;&nbsp;: Completed</b><br>
-<b>Conclusion &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Completed</b><br>
-<b>Presentation Video : Completed</b><br>
-<b>Lastest Update : 19 Dec 2018 01:00 PM</b><br>
-&nbsp;&nbsp;<a href=http://www.it.kmitl.ac.th/~it61070020/web/index.html><h3> ผลการดำเนินการ (PROJECT SITE) </h3></a>
-<a href="https://www.youtube.com/watch?v=cxuP3uNUuXs"><b>Presentation Video</b></a>
+<b>Borad Microcontroller&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;: Uncompleted</b><br>
+<b>Poster&nbsp;&nbsp;&nbsp;: Uncompleted</b><br>
+<b>Presentation Video &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Uncompleted</b><br>
+<b>Lastest Update : 30 April 2019 00:47 AM</b><br>
+&nbsp;&nbsp;
+<a href="https://www.youtube.com/"><b>Presentation Video</b></a>
 # Author 
  <b>IT KMITL#16</b> <br />
  1.Miss Kesaranee Trisawatwong  61070018 <br />
