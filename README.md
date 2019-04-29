@@ -26,7 +26,7 @@ Mini Project นี้เป็นการนำเสนอ Microcontroller �
   <th><img src="src/ong.jpg" height="150" width="150"></th>
   <th><img src="src/yew.jpg" height="150" width="150"></th>
   <th><img src="src/man.jpg" height="150" width="150"></th>
-  <th><img src="src/kit.jpg" height="150" width="150"></th>
+  <th><img src="src/kitt.jpg" height="150" width="150"></th>
  </tr>
  <tr>
   <th><p align="center">Kesaranee Trisawatwong</p></th> 
