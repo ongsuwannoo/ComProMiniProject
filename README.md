@@ -3,9 +3,9 @@ SONA ล่า A
 </h1>
 
 # Description 
-Mini Project นี้เป็นการนำเสนอ Microcontroller <br>
-<b>2 </b><br>
-<b>1 </b>
+Mini Project นี้เป็นการนำเสนอ Microcontroller โดยมีวัตถุประสงค์คือ<br>
+<b>1. </b><br>
+<b>2. </b>
 
 # Status
 <b>Borad Microcontroller&nbsp;: Uncompleted</b><br>
