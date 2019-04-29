@@ -9,7 +9,7 @@ Mini Project นี้เป็นการนำเสนอ Microcontroller <b
 
 # Status
 <b>Borad Microcontroller&nbsp;: Uncompleted</b><br>
-<b>Poster&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Uncompleted</b><br>
+<b>Poster&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Uncompleted</b><br>
 <b>Presentation Video &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Uncompleted</b><br>
 <b>Lastest Update : 30 April 2019 00:47 AM</b><br>
 &nbsp;&nbsp;
