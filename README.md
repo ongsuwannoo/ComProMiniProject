@@ -1,6 +1,6 @@
-<p align="center"> 
- <h1>SONA ล่า A</h1>
-</p>
+<h1 align="center"> 
+SONA ล่า A
+</h1>
 ![](images/esports.gif)
 
 # Description 
