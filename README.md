@@ -16,10 +16,10 @@ Mini Project นี้เป็นการนำเสนอ Microcontroller �
 <a href="https://www.youtube.com/"><b>Presentation Video</b></a>
 # Author 
  <b>IT KMITL#16</b> <br />
- 1.Miss Kesaranee Trisawatwong  61070018 <br />
- 2.Mr.  Kunakorn Kositsakul     61070020 <br />
- 3.Mr.  Jakkrapat Suwanno       61070022 <br />
- 4.Miss Wanatharn Kongkaew      61070195 <br />
+ 1.Mr.  Jakkrapat  Suwanno    61070022 <br />
+ 2.Mr.  Jirat thongpeng       61070027 <br />
+ 3.Mr.  Chanathip Chuchuay    61070033 <br />
+ 4.Mr.  Punyapat Plangpranet  61070122 <br />
  
 <center><table>
  <tr>
@@ -29,16 +29,16 @@ Mini Project นี้เป็นการนำเสนอ Microcontroller �
   <th><img src="src/kitt.jpg" height="150" width="150"></th>
  </tr>
  <tr>
-  <th><p align="center">Kesaranee Trisawatwong</p></th> 
-  <th><p align="center">Kunakorn Kositsakul</p></th>
-  <th><p align="center">Jakkrapat Suwanno</p></th>
-  <th><p align="center">Wanatharn Kongkaew</p></th>
+  <th><p align="center">Jakkrapat  Suwanno</p></th> 
+  <th><p align="center">Jirat thongpeng   </p></th>
+  <th><p align="center">Chanathip Chuchuay</p></th>
+  <th><p align="center">Punyapat Plangpranet</p></th>
  </tr>
  <tr>
-  <th><p align="center">61070018</p></th>
-  <th><p align="center">61070020</p></th>
   <th><p align="center">61070022</p></th>
-  <th><p align="center">61070195</p></th>
+  <th><p align="center">61070027</p></th>
+  <th><p align="center">61070033</p></th>
+  <th><p align="center">61070122</p></th>
  </table></center>
  
 <br />
