@@ -1,46 +1,76 @@
 <h1 align="center"> 
-SONA ล่า A
+Ultrascanic
 </h1>
-![](images/esports.gif)
+<h3 align="center">อุปกรณ์หลักที่ใช้</h3>
+1. Ultrasonic Sensor Module (HC-SR04) เป็นตัวส่งสัญญาณอัลตร้าโซนิคออกไปและสะท้อนกลับมา เพื่อจับเวลาแล้วนำมาคำนวนเป็นระยะทาง <br>
+2. Servo motor 180 degrees เป็นมอเตอร์ที่สามารถหมุนได้ 180 องศา ควบคุมแบบป้อนกลับ ทำให้ได้ค่าที่ใกล้เคียงกับที่ต้องการ<br>
+3. Variable resistor เป็นตัวต้านทานแบบปรับค่าได้ ซึ่งตัวที่จะนำมาใช้ในโปรเจคนี้คือตัว 10k จะคืนค่า 0 - 1023 เพื่อนำไปคำนวนต่อ<br>
+4. Arduino uno r3 เป็นบอร์ดตัวหลักของโปรเจคนี้ทำหน้าที่เป็น Microcontroller ของโปรเจคนี้<br><br>
 
 # Description 
-Mini Project นี้เป็นการนำเสนอ Microcontroller <br>
-<b> </b><br>
-<b>2.วิเคราะห์แนวเกมที่เป็นที่นิยมในวงการ eSports และสาเหตุที่เป็นที่นิยม</b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mini Project นี้เป็นการนำเสนอ Microcontroller Project โดยตัวหลักที่จะใช้คือ <a href=https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf>HC-SR04</a> ซึ่งเป็นตัวส่งสัญญาณ Ultrasonic (คลื่นความถี่วิทยุ) โดยป้อนไฟให้ขา VCC และ GND โมดูลนี้ มีขาสัญญาณดิจิทัล TRIG (อินพุต) และ ECHO (เอาต์พุต) ที่นำไปเชื่อมต่อกับไมโครคอนโทรลเลอร์ได้ อย่างเช่น Arduino ในการวัดระยะห่างแต่ละครั้ง จะต้องสร้างสัญญาณแบบ Pulse ที่มีความกว้าง (Pulse Width) อย่างน้อย 10 usec ป้อนให้ขา TRIG และหลังจากนั้นให้วัดความกว้างของสัญญาณช่วง HIGH จากขา ECHO ถ้าวัตถุอยู่ใกล้ <b>ความกว้างของสัญญาณ Pulse ที่ได้ก็จะน้อย แต่ถ้าวัตถุอยู่ไกลออกไป ก็จะได้ค่าความกว้างของสัญญาณ Pulse ที่มากขึ้น</b> <br><br>
+<h3 align="center">HC-SR04 </h3>
+<p align="center"> 
+<img src="https://www.piborg.org/image/cache/catalog/freeburn/BURN-0019/DSC_0245-1024x780.jpg" height="300" width="400">
+</p>
+หลักการทำงานของโมดูล HC-SR04
+โมดูล HC-SR04 ใช้สำหรับการวัดระยะห่างด้วยคลื่นอัลตราโซนิค มีสองส่วนหลักคือ ตัวส่งคลื่นที่ทำหน้าที่สร้างคลื่นเสียงออกไปในการวัดระยะแต่ละครั้ง ("Ping") แล้วเมื่อไปกระทบวัตถุหรือสิ่งกีดขวาง คลื่นเสียงถูกสะท้อนกลับมายังตัวรับแล้วประมวลผลด้วยวงจรอิเล็กทรอนิกส์ภายในโมดูล ถ้าจับเวลาในการเดินทางของคลื่นเสียงในทิศทางไปและกลับ และถ้าทราบความเร็วเสียงในอากาศ ก็จะสามารถคำนวณระยะห่างจากวัตถุกีดขวางได้
+<br><br><b>- ใช้แรงดันประมาณ +5V </b><br>
+<b>- กินกระแสประมาณ 15mA </b><br>
+<b>- ช่วงการวัดระยะทาง (measurement range): ประมาณ 2cm - 400cm  </b><br>
+<b>- ความกว้างเชิงมุมในการวัด (measuring angle): 15 องศา </b><br>
+<b>- ความกว้างของสัญญาณ Pulse สำหรับ Trigger: 10 usec  </b><br>
+<b>- ระดับแรงดันลอจิกสำหรัขา TRIG และ ECHO: 5V TTL  </b><br>
+<b>- ความแม่นยำ 3mm  </b><br>
+<b>- ใช้คลื่นเสียงความถี่ ประมาณ 40kHz  </b><br>
+<b>- สูตรการคำนวนระยะทาง<br> 
+จาก v = 340 m/s&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;(340 * 100)/10^6 cm/usec&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;34/1000 cm/usec <br>
+ฉนั้น 2 * d = v * t&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;d = v * t/2&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;(17 * t)/1000 cm&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;(17 * t)/100 mm.&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;t * 0.034/2 cm.</b><br>
+<br><br>
+<h3 align="center">Variable Resistor</h3>
+<p align="center"> 
+<img src="https://hallroad.org/images/thumbnails/913/913/detailed/10/Volume_Type_Variable_Resistor_in_pakistan_Potentiometer_Trimmer_Resistor.jpg" height="300" width="400">
+ </p>
+ Variable Resistorตัวต้านทานชนิดเปลี่ยนค่าได้ มีแกนหมุนเปลี่ยนค่าความต้านทานคือโวลลุ่ม (Volume) ซึ่งเราได้นำมาใช้ในการปรับความเร็วของเรดาห์
+ลักษณะการทำงานของโปรเจคตัวนี้ จะมีตัวอุปกรณ์หลักคือ <br>
+<h3 align="center">servo motor 180 degrees</h3>
+<p align="center"> 
+<img src="https://cdn.instructables.com/FCM/8DKT/IBXMML6A/FCM8DKTIBXMML6A.LARGE.jpg" height="300" width="400">
+  </p>
+  Servo Motor คือระบบควบคุมที่ประกอบด้วยไฟฟ้าคอนโทรลและเครื่องกล ใช้สำหรับงานที่ต้องการควบคุมตำแหน่งความเร็ว แรงบิด ความแม่นยำ และความรวดเร็ว เพื่อให้เครื่องกลและไฟฟ้าคอนโทรลทำงานสอดคล้องกันอย่างมีประสิทธิภาพ โดยใช้การควบคุมแบบป้อนกลับ (Feedback Controller) ซึ่งคือระบบควบคุมที่มีการวัดค่าเอาต์พุตของระบบ แล้วนำมาเปรียบเทียบกับค่าอินพุตเพื่อควบคุมและปรับแต่งให้ค่าเอาต์พุตของระบบให้มีค่า เท่ากับหรือใกล้เคียงกับค่าอินพุต
+<br><br><br>
 
 # Status
-<b>Economic&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;: Completed</b><br>
-<b>Game Trends&nbsp;&nbsp;&nbsp;: Completed</b><br>
-<b>Conclusion &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Completed</b><br>
-<b>Presentation Video : Completed</b><br>
-<b>Lastest Update : 19 Dec 2018 01:00 PM</b><br>
-&nbsp;&nbsp;<a href=http://www.it.kmitl.ac.th/~it61070020/web/index.html><h3> ผลการดำเนินการ (PROJECT SITE) </h3></a>
-<a href="https://www.youtube.com/watch?v=cxuP3uNUuXs"><b>Presentation Video</b></a>
+<b>Borad Microcontroller&nbsp;: Uncompleted</b><br>
+<b>Poster&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Uncompleted</b><br>
+<b>Presentation Video &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Uncompleted</b><br>
+<b>Lastest Update : 30 April 2019 00:47 AM</b><br>
+<a href="https://www.youtube.com/"><b>Presentation Video</b></a>
 # Author 
  <b>IT KMITL#16</b> <br />
- 1.Miss Kesaranee Trisawatwong  61070018 <br />
- 2.Mr.  Kunakorn Kositsakul     61070020 <br />
- 3.Mr.  Jakkrapat Suwanno       61070022 <br />
- 4.Miss Wanatharn Kongkaew      61070195 <br />
+ 1.Mr.  Jakkrapat  Suwanno    61070022 <br />
+ 2.Mr.  Jirat thongpeng       61070027 <br />
+ 3.Mr.  Chanathip Chuchuay    61070033 <br />
+ 4.Mr.  Punyapat Plangpranet  61070122 <br />
  
 <center><table>
  <tr>
-  <th><img src="images/great.jpg" height="150" width="130"></th>
-  <th><img src="images/tank.jpg" height="150" width="150"></th>
-  <th><img src="images/ong.jpg" height="150" width="150"></th>
-  <th><img src="images/tun.jpg" height="150" width="150"></th>
+  <th><img src="src/ong.jpg" height="150" width="150"></th>
+  <th><img src="src/man.jpg" height="150" width="150"></th>
+  <th><img src="src/yew.jpg" height="150" width="150"></th>
+  <th><img src="src/kitt.jpg" height="150" width="150"></th>
  </tr>
  <tr>
-  <th><p align="center">Kesaranee Trisawatwong</p></th> 
-  <th><p align="center">Kunakorn Kositsakul</p></th>
-  <th><p align="center">Jakkrapat Suwanno</p></th>
-  <th><p align="center">Wanatharn Kongkaew</p></th>
+  <th><p align="center">Jakkrapat  Suwanno</p></th> 
+  <th><p align="center">Jirat thongpeng   </p></th>
+  <th><p align="center">Chanathip Chuchuay</p></th>
+  <th><p align="center">Punyapat Plangpranet</p></th>
  </tr>
  <tr>
-  <th><p align="center">61070018</p></th>
-  <th><p align="center">61070020</p></th>
   <th><p align="center">61070022</p></th>
-  <th><p align="center">61070195</p></th>
+  <th><p align="center">61070027</p></th>
+  <th><p align="center">61070033</p></th>
+  <th><p align="center">61070122</p></th>
  </table></center>
  
 <br />
@@ -50,8 +80,8 @@ Mini Project นี้เป็นการนำเสนอ Microcontroller <b
 <a href=https://www.esportsearnings.com/>e-Sports Earnings</a>
 <br />
 <br />
-
-<a href=https://forthebadge.com/><img src="images/made-with-python.svg"></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href=https://forthebadge.com/><img src="images/uses-html.svg"></a>
+[![forthebadge](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-c.svg)](https://forthebadge.com)
 
 
 
