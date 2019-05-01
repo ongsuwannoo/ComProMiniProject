@@ -3,7 +3,7 @@ Ultrascanic
 </h1>
 
 # Description 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mini Project นี้เป็นการนำเสนอ Microcontroller Project โดยตัวหลักที่จะใช้คือ <a href=https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf>HC-SR04</a> ซึ่งเป็นตัวส่งสัญญาณ Ultrasonic (คลื่นความถี่วิทยุ) โดยป้อนไฟให้ขา VCC และ GND โมดูลนี้ มีขาสัญญาณดิจิทัล TRIG (อินพุต) และ ECHO (เอาต์พุต) ที่นำไปเชื่อมต่อกับไมโครคอนโทรลเลอร์ได้ อย่างเช่น Arduino ในการวัดระยะห่างแต่ละครั้ง จะต้องสร้างสัญญาณแบบ Pulse ที่มีความกว้าง (Pulse Width) อย่างน้อย 10 usec ป้อนให้ขา TRIG และหลังจากนั้นให้วัดความกว้างของสัญญาณช่วง HIGH จากขา ECHO ถ้าวัตถุอยู่ใกล้ <b>ความกว้างของสัญญาณ Pulse ที่ได้ก็จะน้อย แต่ถ้าวัตถุอยู่ไกลออกไป ก็จะได้ค่าความกว้างของสัญญาณ Pulse ที่มากขึ้น</b> <br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mini Project นี้เป็นการนำเสนอ Microcontroller Project โดยตัวหลักที่จะใช้คือ <a href=https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf/>HC-SR04</a> ซึ่งเป็นตัวส่งสัญญาณ Ultrasonic (คลื่นความถี่วิทยุ) โดยป้อนไฟให้ขา VCC และ GND โมดูลนี้ มีขาสัญญาณดิจิทัล TRIG (อินพุต) และ ECHO (เอาต์พุต) ที่นำไปเชื่อมต่อกับไมโครคอนโทรลเลอร์ได้ อย่างเช่น Arduino ในการวัดระยะห่างแต่ละครั้ง จะต้องสร้างสัญญาณแบบ Pulse ที่มีความกว้าง (Pulse Width) อย่างน้อย 10 usec ป้อนให้ขา TRIG และหลังจากนั้นให้วัดความกว้างของสัญญาณช่วง HIGH จากขา ECHO ถ้าวัตถุอยู่ใกล้ <b>ความกว้างของสัญญาณ Pulse ที่ได้ก็จะน้อย แต่ถ้าวัตถุอยู่ไกลออกไป ก็จะได้ค่าความกว้างของสัญญาณ Pulse ที่มากขึ้น</b> <br><br>
 <h3 align="center">HC-SR04 </h3>
 <p align="center"> 
 <img src="https://www.piborg.org/image/cache/catalog/freeburn/BURN-0019/DSC_0245-1024x780.jpg" height="300" width="400">
