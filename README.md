@@ -22,6 +22,11 @@ Ultrascanic
 จาก v = 340 m/s&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;(340 * 100)/10^6 cm/usec&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;34/1000 cm/usec <br>
 ฉนั้น 2 * d = v * t&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;d = v * t/2&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;(17 * t)/1000 cm&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;(17 * t)/100 mm.&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;t * 0.034/2 cm.</b><br>
 <br><br>
+<h3 align="center">Variable Resistor</h3>
+<p align="center"> 
+<img src="https://hallroad.org/images/thumbnails/913/913/detailed/10/Volume_Type_Variable_Resistor_in_pakistan_Potentiometer_Trimmer_Resistor.jpg" height="300" width="400">
+ </p>
+ Variable Resistorตัวต้านทานชนิดเปลี่ยนค่าได้ มีแกนหมุนเปลี่ยนค่าความต้านทานคือโวลลุ่ม (Volume) ซึ่งเราได้นำมาใช้ในการปรับความเร็วของเรดาห์
 ลักษณะการทำงานของโปรเจคตัวนี้ จะมีตัวอุปกรณ์หลักคือ <br>
 1. Ultrasonic Sensor Module (HC-SR04) เป็นตัวส่งสัญญาณอัลตร้าโซนิคออกไปและสะท้อนกลับมา เพื่อจับเวลาแล้วนำมาคำนวนเป็นระยะทาง <br>
 2. Servo motor 180 degrees เป็นมอเตอร์ที่สามารถหมุนได้ 180 องศา ควบคุมแบบป้อนกลับ ทำให้ได้ค่าที่ใกล้เคียงกับที่ต้องการ<br>
