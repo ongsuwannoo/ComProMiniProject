@@ -22,6 +22,12 @@ Ultrascanic
 จาก v = 340 m/s&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;(340 * 100)/10^6 cm/usec&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;34/1000 cm/usec <br>
 ฉนั้น 2 * d = v * t&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;d = v * t/2&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;(17 * t)/1000 cm&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;(17 * t)/100 mm.&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;t * 0.034/2 cm.</b><br>
 
+ลักษณะการทำงานของโปรเจคตัวนี้ จะมีตัวอุปกรณ์หลักคือ <br>
+1. Ultrasonic Sensor Module (HC-SR04) เป็นตัวส่งสัญญาณอัลตร้าโซนิคออกไปและสะท้อนกลับมา เพื่อจับเวลาแล้วนำมาคำนวนเป็นระยะทาง <br>
+2. Servo motor 180 degrees เป็นมอเตอร์ที่สามารถหมุนได้ 180 องศา ควบคุมแบบป้อนกลับ ทำให้ได้ค่าที่ใกล้เคียงกับที่ต้องการ<br>
+3. Variable resistor เป็นตัวต้านทานแบบปรับค่าได้ ซึ่งตัวที่จะนำมาใช้ในโปรเจคนี้คือตัว 10k จะคืนค่า 0 - 1023 เพื่อนำไปคำนวนต่อ<br>
+4. Arduino uno r3 เป็นบอร์ดตัวหลักของโปรเจคนี้ทำหน้าที่เป็น Microcontroller ของโปรเจคนี้<br>
+
 # Status
 <b>Borad Microcontroller&nbsp;: Uncompleted</b><br>
 <b>Poster&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Uncompleted</b><br>
