@@ -83,8 +83,8 @@ Ultrascanic
 <br />
 
 # References 
-<a href=http://database.esportsobserver.com/>TEO Professional</a><br />
-<a href=https://www.esportsearnings.com/>e-Sports Earnings</a>
+<a href=E#>#</a><br />
+<a href=#>#</a>
 <br />
 <br />
 [![forthebadge](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)](https://forthebadge.com)
