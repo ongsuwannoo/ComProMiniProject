@@ -58,8 +58,8 @@ Ultrascanic
 
 # Status
 <b>Borad Microcontroller&nbsp;: Completed</b><br>
-<b>Poster&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Uncompleted</b><br>
-<b>Presentation Video &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Uncompleted</b><br>
+<b>Poster&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: completed</b><br>
+<b>Presentation Video &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: completed</b><br>
 <b>Lastest Update : 1 May 2019 20:07 PM</b><br>
 <a href="https://youtu.be/Uq9CEW0vB-w"><b>Presentation Video</b></a>
 # Author 
